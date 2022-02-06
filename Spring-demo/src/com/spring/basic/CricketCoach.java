@@ -48,8 +48,5 @@ public class CricketCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneSerivce.getFortune();
 	}
-	
-	
-	
 
 }

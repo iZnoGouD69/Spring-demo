@@ -2,6 +2,7 @@ package com.spring.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.spring.basic.Coach;
@@ -12,6 +13,12 @@ import com.spring.basic.Coach;
  */
 //@Component("CoachComponent")
 @Component
+
+@Scope("prototype")
+/*
+ * Default is singleton where bean is shared while we 
+ * use prototype to generate new bean for every object
+ */
 public class TennisCoach implements Coach {
 
 	// Field Injection
